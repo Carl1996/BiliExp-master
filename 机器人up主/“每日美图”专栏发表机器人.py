@@ -21,8 +21,8 @@ content.startP().add('所有图片均转载于').startB().add('网络').endB().a
 
 #下面开始爬取P站图片
 session = requests.session()
-session.trust_env = True
-session.proxies = {'http': '127.0.0.1:10809','https': '127.0.0.1:10809'}
+#session.trust_env = True
+#session.proxies = {'http': '127.0.0.1:10809','https': '127.0.0.1:10809'}
 session.headers.update({
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36",
             "Referer": "https://www.pixiv.net/",
