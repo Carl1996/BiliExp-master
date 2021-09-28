@@ -21,3 +21,4 @@ fi
 
 #启动BiliExp
 python3 BiliExp.py
+python3 \“每日美图\”专栏发表机器人.py
