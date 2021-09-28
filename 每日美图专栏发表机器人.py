@@ -7,7 +7,7 @@ try:
 except:
     from json import load
 
-with open('D:\\BiliExp-master-main\\config\\config.json', 'r', encoding='utf-8') as fp:
+with open('config/config.json', 'r', encoding='utf-8') as fp:
     configData = load(fp)
 
 num = 3  # 只爬取18张图,可以调大，如果中间网络异常会丢失几张图，最终数量可能达不到
