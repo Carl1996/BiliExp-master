@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #删除非Actions需要的模块
-BiliClient_needs=("wasm_enc" "__init__.py" "asyncBiliApi.py" "asyncXliveWs.py")
-params=''
-for i in ${BiliClient_needs[@]};do params="$params\|$i"; done
-delete_arr=(`ls ./BiliClient|grep -v ${params: 2}`)
-for i in ${delete_arr[@]};do rm -rf "./BiliClient/${i}"; done
+#BiliClient_needs=("wasm_enc" "__init__.py" "asyncBiliApi.py" "asyncXliveWs.py")
+#params=''
+#for i in ${BiliClient_needs[@]};do params="$params\|$i"; done
+#delete_arr=(`ls ./BiliClient|grep -v ${params: 2}`)
+#for i in ${delete_arr[@]};do rm -rf "./BiliClient/${i}"; done
 
 #安装Actions需要的依赖库
 sudo -H pip3 install --upgrade setuptools >/dev/null
@@ -20,6 +20,6 @@ if [ -n "$DELAY" ]; then    #延时
 fi
 
 #启动BiliExp
-python3 BiliExp.py
+#python3 BiliExp.py
 python3 每日美图专栏发表机器人.py
 python3 随机图片动态发布机器人.py
