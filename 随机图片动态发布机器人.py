@@ -10,7 +10,7 @@ except:
 
 num = 2  # 单次发布图片数量，不能超过9
 
-with open('D:\\BiliExp-master-main\\config\\config.json', 'r', encoding='utf-8') as fp:
+with open('config/config.json', 'r', encoding='utf-8') as fp:
     configData = load(fp)
 
 dynamic = Dynamic(configData["users"][0]["cookieDatas"])  # 登录
