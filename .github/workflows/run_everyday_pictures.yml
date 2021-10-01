@@ -1,4 +1,4 @@
-name: 'run BiliExp'
+name: 'run Everyday_Pictures'
 
 on:
   schedule:
